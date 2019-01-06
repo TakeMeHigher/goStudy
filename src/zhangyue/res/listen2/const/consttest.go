@@ -59,7 +59,7 @@ func main(){
 		c4
 	)
 	fmt.Printf("c1=%d c2=%d c3=%d c4=%d \n", c1, c2, c3, c4)
-
+	// c1=1 c2=2 c3=4 c4=8
 	const(
 		d1 = 1 << iota
 		d2 = 1 << iota
@@ -67,4 +67,5 @@ func main(){
 		d4 = 1 << iota
 	)
 	fmt.Printf("d1=%d d2=%d d3=%d d4=%d \n", d1, d2, d3, d4)
+	//d1=1 d2=2 d3=4 d4=8
 }
