@@ -36,18 +36,26 @@ func timeToStamp(str_time string) {
 	fmt.Println("当前时间戳是", time.Now().Unix())
 }
 
-
-func task(){
-	fmt.Print("do task\n")
+func task() {
+	fmt.Println("do task")
 }
 
-// 定时器 
-func timeTick(){
-	tick := time.Tick(1*time.Second)
-	for i:= range tick{
+// 定时器
+func timeTick() {
+	tick := time.Tick(1 * time.Second)
+	for i := range tick {
 		fmt.Println(i)
 		task()
 	}
+}
+
+// 常量
+func testTimeConst() {
+	fmt.Printf("纳秒%d\n", time.Nanosecond)
+	fmt.Printf("微妙%d\n", time.Microsecond)
+	fmt.Printf("毫秒%d\n", time.Millisecond)
+	fmt.Printf("秒%d\n", time.Second)
+	fmt.Printf("分钟%d\n", time.Minute)
 }
 
 func main() {
@@ -59,6 +67,8 @@ func main() {
 	// str_time := time.Now().Format("2006-01-02 15:04:05")  // 格式化时间固定写成2006-01-02 15:04:05
 	// fmt.Println(str_time, "str_time")
 	// timeToStamp(str_time)
-	
-	timeTick()
+
+	// timeTick()
+
+	testTimeConst()
 }
