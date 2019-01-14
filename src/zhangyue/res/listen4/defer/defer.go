@@ -8,6 +8,12 @@ func defer1() {
 	fmt.Println("------------------3")
 }
 
+/*
+------------------2
+-----------------3
+----------------1
+*/
+
 
 
 func testdefer1(){
@@ -16,7 +22,8 @@ func testdefer1(){
 	}
 	fmt.Println("go-----------")
 }
-
+/*
+*/
 
 func testdefer2(){
 	i:=5
@@ -24,10 +31,13 @@ func testdefer2(){
 	i=1000
 	fmt.Println("over -----------")
 }
-
+/*
+over -----------
+defer test i=5
+*/
 
 func main() {
 	// defer1()
-	// testdefer1()
-	testdefer2()
+	testdefer1()
+	// testdefer2()
 }
