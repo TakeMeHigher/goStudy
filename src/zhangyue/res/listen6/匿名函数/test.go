@@ -63,6 +63,13 @@ func test4 () int {
 	return i
 }
 
+/*
+i is 100
+defer i is 100
+return i is 100
+*/
+-.
+
 
 func main() {
 	// test1()

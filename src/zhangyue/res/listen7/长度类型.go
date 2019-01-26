@@ -14,6 +14,11 @@ func test1() {
 	fmt.Printf("d=%v\n", d)
 }
 
+/*
+c=[1 2 3 4]
+d=[1 2 3 4]
+*/
+
 func main() {
-	test1()
+	test1()  
 }

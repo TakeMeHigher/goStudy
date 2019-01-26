@@ -29,7 +29,6 @@ func test4(b ...int) int {
 	for i := 0; i < len(b); i++ {
 		sum += b[i]
 	}
-
 	return sum
 }
 

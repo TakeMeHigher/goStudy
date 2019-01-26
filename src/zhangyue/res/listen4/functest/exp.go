@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// 求1-100 内的质数
 func justfy(i int) bool {
 	if i <= 1 {
 		return false

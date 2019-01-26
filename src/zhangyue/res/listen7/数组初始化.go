@@ -35,7 +35,7 @@ func test5() {
 
 func test6(){
 	a := [5]int{3:30, 2:20}
-	fmt.Println(a)
+	fmt.Println(a)  //[0 0 20 30 0]
 }
 
 func main() {

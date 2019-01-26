@@ -51,7 +51,7 @@ func test4(a int) (func(int) int, func(int) int) {
 func test5(){
 	for i:=0; i<=5;i++{
 		go func(){
-			fmt.Println(a)
+			fmt.Println()
 		}()
 	}
 	time.Sleep(time.Second)
