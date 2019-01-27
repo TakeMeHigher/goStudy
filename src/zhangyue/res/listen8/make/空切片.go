@@ -22,6 +22,7 @@ func test() {
 	fmt.Printf("addr = %p len=%d  cap =%d\n", a, len(a), cap(a))
 
 }
+
 /*
 addr = 0x0 len=0  cap =0
 a is nil

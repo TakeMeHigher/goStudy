@@ -19,6 +19,7 @@ func testMake1() {
 	a = append(a, 1000)
 	fmt.Printf("扩容之后的地址：a=%v addr:%p len:%d cap:%d\n", a, a, len(a), cap(a))
 }
+
 /*
 a=[10 0 0 0 0] addr:0xc0000860a0 len:5 cap:10
 a=[10 0 0 0 0 11] addr:0xc0000860a0 len:6 cap:10
